@@ -1,0 +1,15 @@
+function diagonalDifference(arr) {
+    
+    let array1 = arr.length -1
+    let first = 0
+    let second = 0;
+    for (let i = 0; i < arr.length; i += 1){
+        first += arr[i][i];
+        }
+    arr.reverse()
+    for(let i = array1; i >= 0; i -= 1){
+        second += arr[i][i]
+    }
+    let result = first - second
+    return Math.abs(result);
+}
