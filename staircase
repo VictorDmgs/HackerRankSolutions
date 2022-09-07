@@ -1,0 +1,19 @@
+function staircase(n) {
+   
+for(let j = 1; j <= n; j += 1){
+let a = ' '
+let b = "#"
+let result = ''
+
+for(let i = 0; i < (n - j); i += 1) {
+  result = result + a 
+}
+
+for(let i = 0; i < j; i += 1) {
+  result = result  + b
+}
+
+console.log(result);
+}
+
+}
