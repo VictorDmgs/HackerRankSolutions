@@ -1,0 +1,17 @@
+function breakingRecords(scores) {
+    
+let maxCount = 0;
+let minCount = 0;
+let lastScoreMax = scores[0];
+let lastScoreMin = scores[0];
+for(let i = 1; i < scores.length; i += 1) {
+  if (scores[i] > lastScoreMax){
+    lastScoreMax = scores[i];
+    maxCount = maxCount + 1;
+  }else if (scores[i] < lastScoreMin){
+    lastScoreMin = scores[i];
+    minCount = minCount + 1;
+  }
+}
+  return [maxCount, minCount];
+}
