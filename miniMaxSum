@@ -1,0 +1,10 @@
+function miniMaxSum(arr) {
+    
+let sum = 0
+let difMinus = Math.min.apply(Math, arr);
+let difPlus = Math.max.apply(Math, arr);
+for(let i = 0; i < arr.length; i +=1){
+    sum += arr[i];
+}
+console.log((sum - difPlus), (sum - difMinus));
+}
